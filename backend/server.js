@@ -5,7 +5,7 @@ require("dotenv").config();
 
 
 const taskRoutes = require("./routes/taskRoute"); 
-const authRoutes = require("./routes/authroute");
+const authRoutes = require("./routes/authRoute");
 
 
 
