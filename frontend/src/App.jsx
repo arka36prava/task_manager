@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import Auth from "./Auth";
 
 
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/tasks`;
+
 //token
 const getAuthHeaders = () => {
   const token = localStorage.getItem("token");

@@ -1,7 +1,9 @@
 import { useState } from "react";
 
-const LOGIN_URL = "http://localhost:5000/api/auth/login";
-const REGISTER_URL = "http://localhost:5000/api/auth/register";
+const API_BASE = import.meta.env.VITE_API_URL;
+
+const LOGIN_URL = `${API_BASE}/api/auth/login`;
+const REGISTER_URL = `${API_BASE}/api/auth/register`;
 
 export default function Auth({ onAuthSuccess }) {
   const [isLogin, setIsLogin] = useState(true);
